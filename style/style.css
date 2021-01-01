@@ -16,7 +16,7 @@ body {
 .d-block {
     display: block;
 }
-d-inline-block {
+.d-inline-block {
     display: inline-block
 }
 .justify-content-center {
