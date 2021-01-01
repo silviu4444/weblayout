@@ -94,7 +94,7 @@
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     header {
-        background: url(images/town-road.jpg);
+        background: url(../images/town-road.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
