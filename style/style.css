@@ -6,6 +6,7 @@ h1 {
     color: white;
 }
 .container {
+    position: relative;
     margin-top: 100px;
     background-color: rgb(56, 8, 56);
     display: flex;
@@ -27,16 +28,40 @@ form {
     width: 250px;
 }
 .valid-password {
+    background: rgb(59, 161, 59);
+    display: inline-block;
+    padding: 10px 0;
+    position: relative;
+    text-align: center;
+    width: 250px;
+    border-radius: 4px;
+    color: white;
+  }
+  .valid-password:before {
+    border-bottom: 15px solid rgb(59, 161, 59);
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: -3px;
+    width: 0;
+  }
+/* .valid-password {
     padding: 10px;
     border-radius: 4px;
     background-color: rgb(59, 161, 59);
     color: white;
-}
+}*/
 .unvalid-password {
     padding: 10px;
     border-radius: 4px;
     background-color: rgb(212, 69, 69);
     color: white;
+}
+.d-none {
+    display: none;
 }
 input {
     padding: 10px;
@@ -56,3 +81,7 @@ button {
     border-style: none;
     margin-top: 15px;
 }
+
+
+
+
