@@ -49,12 +49,12 @@ const checkConfPassword = () => {
     }
 
     if(inputPaswordValue !== inputConfrimPasswordValue) {
-        divCheckPw.textContent = 'Password Do Not Match!';
+        divCheckPw.textContent = 'Passwords Do Not Matches!';
         divCheckPw.setAttribute('class', 'unvalid-password')
         checkConfPw.appendChild(divCheckPw);
     } 
     else if(inputPaswordValue === inputConfrimPasswordValue) {
-        divCheckPw.textContent = 'Password Match!';
+        divCheckPw.textContent = 'Passwords Matches!';
         divCheckPw.setAttribute('class', 'valid-password')
         checkConfPw.appendChild(divCheckPw);
     }
@@ -87,7 +87,7 @@ confirmPassword.addEventListener('focus', () => {
     checkConfPw.appendChild(divCheckPw);
 
     if(inputPaswordValue !== inputConfrimPasswordValue || inputPaswordValue === "") {
-        divCheckPw.textContent = 'Password Do Not Match!';
+        divCheckPw.textContent = 'Passwords Do Not Matches!';
         divCheckPw.setAttribute('class', 'unvalid-password')
         checkConfPw.appendChild(divCheckPw);
     } 
