@@ -50,13 +50,15 @@ const checkConfPassword = () => {
 
     if(inputPaswordValue !== inputConfrimPasswordValue) {
         divCheckPw.textContent = 'Passwords Do Not Matches!';
-        divCheckPw.setAttribute('class', 'unvalid-password')
+        divCheckPw.setAttribute('class', 'unvalid-password');
         checkConfPw.appendChild(divCheckPw);
+        button.disabled = true;
     } 
     else if(inputPaswordValue === inputConfrimPasswordValue) {
         divCheckPw.textContent = 'Passwords Matches!';
-        divCheckPw.setAttribute('class', 'valid-password')
+        divCheckPw.setAttribute('class', 'valid-password');
         checkConfPw.appendChild(divCheckPw);
+        button.disabled = false;
     }
     else if(inputValue === '') {
         checkConfPw.removeChild(divCheckPw);
@@ -64,9 +66,7 @@ const checkConfPassword = () => {
     clearCheckPassword();
 }
 
-const buttonCheck = (event) => {
 
-}
 
 password.addEventListener('keyup', checkPassword)
 password.addEventListener('blur', () => {
@@ -88,9 +88,7 @@ confirmPassword.addEventListener('focus', () => {
 
     if(inputPaswordValue !== inputConfrimPasswordValue || inputPaswordValue === "") {
         divCheckPw.textContent = 'Passwords Do Not Matches!';
-        divCheckPw.setAttribute('class', 'unvalid-password')
+        divCheckPw.setAttribute('class', 'unvalid-password');
         checkConfPw.appendChild(divCheckPw);
     } 
 })
-
-button.addEventListener('click', buttonCheck)
