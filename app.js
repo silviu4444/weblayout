@@ -68,7 +68,7 @@ const checkConfPassword = () => {
     const clearCheckPassword = () => {
 
         if(inputConfrimPasswordValue === "") {
-            parentNode.removeChild(errorMessageCheckPw, button);
+            parentNode.removeChild(errorMessageCheckPw);
         }
     };
 
